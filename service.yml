@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: flask-node-port-svc
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: flaskdemo
   ports:
   - port: 80
     targetPort: 5000
-    nodePort: 30007
