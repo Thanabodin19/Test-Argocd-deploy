@@ -8,4 +8,4 @@ spec:
     app: flaskdemo
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 5002

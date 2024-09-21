@@ -20,5 +20,7 @@ spec:
       containers:
       - image: thanabodin19/argodemo:6
         name: flaskdemo
+        ports:
+        - containerPort: 5002
         resources: {}
 status: {}
