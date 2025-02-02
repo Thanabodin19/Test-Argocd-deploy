@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
        - name: pyui-app
-         image: thanabodin/pyui-app-test:refs/heads/ci-cd
+         image: thanabodin/pyui-app-test:d7ee878
          ports:
          - containerPort: 3000
          envFrom:
