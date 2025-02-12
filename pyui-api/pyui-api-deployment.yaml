@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyui-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pyui-api
+  template:
+    metadata:
+      labels:
+        app: pyui-api
+    spec:
+      containers:
+      - name: pyui-api
+        image: pyui-api:a1f09dee
+        ports:
+        - containerPort: 8000
+        envFrom:
+            - secretRef:
+                name: pyui-api-secrets
+
