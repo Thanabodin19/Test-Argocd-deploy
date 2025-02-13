@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: pyui-api
-        image: pyui-api:a1f09dee
+        image: thanabodin/pyui-api-test:v0.0.1
         ports:
-        - containerPort: 8000
+        - containerPort: 80
         envFrom:
             - secretRef:
                 name: pyui-api-secrets
