@@ -17,3 +17,10 @@ spec:
             name: pyui-app
             port:
               number: 80
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: pyui-api   
+            port:
+              number: 80
